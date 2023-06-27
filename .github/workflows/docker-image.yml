@@ -29,9 +29,9 @@ jobs:
         
     - name: Docker Build Image
       run: |
-        docker build -t clau14/docker-graphql:0.0.2 .
+        docker build -t clau14/docker-graphql:0.0.3 .
     
     - name: Push Docker Image
       run: |
         echo "Iniciando push"
-        docker image push --all-tags clau14/docker-graphql:0.0.2
+        docker push clau14/docker-graphql:0.0.3
