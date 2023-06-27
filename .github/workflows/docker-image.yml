@@ -33,4 +33,4 @@ jobs:
     
     - name: Push Docker Image
       run: |
-        docker push clau14/docker-graphql:0.0.2
+        docker image push --all-tags clau14/docker-graphql:0.0.2
